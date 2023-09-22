@@ -1,8 +1,7 @@
 ﻿namespace inkyore_netcore.DAL.Models
 {
-    public class Article
+    public class Article : BaseEntity
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Author { get; set; }
@@ -14,12 +13,6 @@
         public DateTime UpdatedAt { get; set; }
         public string CovorImage { get; set; }
         public ContentStatus status { get; set; }
-        public bool IsDeleted { get; set; }
     }
 
-    public enum ContentStatus
-    {
-        Draft,
-        Published
-    }
 }
