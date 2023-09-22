@@ -13,6 +13,13 @@
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
         public string CovorImage { get; set; }
+        public ContentStatus status { get; set; }
         public bool IsDeleted { get; set; }
+    }
+
+    public enum ContentStatus
+    {
+        Draft,
+        Published
     }
 }
